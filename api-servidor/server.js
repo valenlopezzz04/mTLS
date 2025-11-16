@@ -17,9 +17,9 @@ const serverOptions = {
 app.get('/hola', (req, res) => {
   const clientCert = req.socket.getPeerCertificate();
   
-  console.log('\n🔒 SERVIDOR recibió petición con mTLS');
+  console.log('\n SERVIDOR recibió petición con mTLS');
   console.log('   Cliente CN:', clientCert.subject ? clientCert.subject.CN : 'Desconocido');
-  console.log('   ✅ Petición validada\n');
+  console.log('    Petición validada\n');
   
   res.json({
     mensaje: 'Hola desde API Servidor (8080)',
@@ -31,6 +31,6 @@ app.get('/hola', (req, res) => {
 
 // Iniciar servidor HTTPS en puerto 8080
 https.createServer(serverOptions, app).listen(8080, () => {
-  console.log('✅ API SERVIDOR escuchando en https://localhost:8080 con mTLS');
+  console.log('API SERVIDOR escuchando en https://localhost:8080 con mTLS');
   console.log('   Esperando peticiones de clientes con certificado...');
 });
