@@ -45,7 +45,3 @@ Este taller muestra cómo dos APIs (Cliente y Servidor) se comunican usando mutu
 ## Video
 
 En el video se muestra el proceso completo, consola y Postman abiertos, y mostrando el correcto funcionamiento con certificados `.p12` y claves.
-
-***
-
-¿Quieres que te prepare este texto en formato markdown listo para pegar?
