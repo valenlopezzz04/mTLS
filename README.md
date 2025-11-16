@@ -45,3 +45,13 @@ Este taller muestra cómo dos APIs (Cliente y Servidor) se comunican usando mutu
 ## Video
 
 En el video se muestra el proceso completo, consola y Postman abiertos, y mostrando el correcto funcionamiento con certificados `.p12` y claves.
+
+
+
+***
+
+> **Nota:**  
+> En los archivos del taller pueden aparecer claves y certificados "duplicados" en diferentes carpetas. Esto se debe a que algunos están en formato `.pem` para que Node.js los pueda leer directamente, mientras que los originales (como `.key`, `.crt`, y `.p12`) se conservan en las carpetas fuente por buenas prácticas y respaldo.  
+> No es necesario eliminar estos archivos extras: es recomendable mantenerlos en caso de necesitar regenerar claves, certificados o exportar para otros sistemas.
+
+
